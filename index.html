@@ -1,11 +1,9 @@
-<!DOCTYPE html>
-<html>
-  <head>
+<html><head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <title>E2D3</title>
     <link rel="stylesheet" href="lib/main.css">
-  </head>
+  <script type="text/javascript" id="O15Mapping" crossorigin="anonymous" src="https://appsforoffice.microsoft.com/lib/1.1/hosted/o15apptofilemappingtable.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="index" src="./index.js"></script><iframe style="display:none" src="https://telemetryservice.firstpartyapps.oaspapps.com/telemetryservice/telemetryproxy.html"></iframe></head>
   <body class="index">
     <script id="chart" type="x-template">
       <figure>
@@ -36,13 +34,842 @@
     </header>
     <div class="maincontent container-fluid">
       <div class="sidebar">
-        <div v-for="tag in tags" v-cloak><a href="javascript:" :class="{ active: tag.id == selected }" @click="select(tag.id)" class="sidebar-item"><i class="fa fa-fw fa-{{tag.image}}"></i>
-            <div class="sidebar-label">{{tag.label}}</div></a></div>
+        <!--v-for-start--><div><a href="javascript:" class="sidebar-item active"><i class="fa fa-fw fa-star"></i>
+            <div class="sidebar-label">Recommended</div></a></div><div><a href="javascript:" class="sidebar-item"><i class="fa fa-fw fa-balance-scale"></i>
+            <div class="sidebar-label">Statistics</div></a></div><div><a href="javascript:" class="sidebar-item"><i class="fa fa-fw fa-gavel"></i>
+            <div class="sidebar-label">Examples</div></a></div><div><a href="javascript:" class="sidebar-item"><i class="fa fa-fw fa-bolt"></i>
+            <div class="sidebar-label">Hackathon</div></a></div><div><a href="javascript:" class="sidebar-item"><i class="fa fa-fw fa-map-marker"></i>
+            <div class="sidebar-label">Map</div></a></div><div><a href="javascript:" class="sidebar-item"><i class="fa fa-fw fa-map"></i>
+            <div class="sidebar-label">Marathon</div></a></div><div><a href="javascript:" class="sidebar-item"><i class="fa fa-fw fa-bomb"></i>
+            <div class="sidebar-label">To Be Developed</div></a></div><div><a href="javascript:" class="sidebar-item"><i class="fa fa-fw fa-question"></i>
+            <div class="sidebar-label">Uncategorized</div></a></div><!--v-for-end-->
       </div>
-      <div v-cloak class="contrib row grid">
-        <div v-for="chart in selectedCharts" class="col-xs-4">
-          <chart :chart="chart"></chart>
+      <div class="contrib row grid">
+        <!--v-for-start--><div class="col-xs-4">
+          <figure>
+        <div class="outer">
+          <div class="inner cover" style="background-image: url(&quot;/files/github/e2d3/e2d3-contrib/contents/under-the-sea-oki/thumbnail.png&quot;);">
+            <div class="title">e2d3/e2d3-contrib/under-the-sea-oki</div>
+          </div>
         </div>
+        <figcaption>
+          <div class="action"><a class="btn btn-sm btn-visualize" href="chart.html#under-the-sea-oki!js!csv"><i class="fa fa-bar-chart"></i> 可視化する</a></div>
+          <div class="readme"><h1 id="under-the-sea">under the sea</h1>
+<p>swimming in the sea</p>
+<!--v-html--></div>
+        </figcaption>
+      </figure><!--v-component-->
+        </div><div class="col-xs-4">
+          <figure>
+        <div class="outer">
+          <div class="inner cover" style="background-image: url(&quot;/files/github/e2d3/e2d3-contrib/contents/bipartite-graph-simple/thumbnail.png&quot;);">
+            <div class="title">e2d3/e2d3-contrib/bipartite-graph-simple</div>
+          </div>
+        </div>
+        <figcaption>
+          <div class="action"><a class="btn btn-sm btn-visualize" href="chart.html#bipartite-graph-simple!js!csv"><i class="fa fa-bar-chart"></i> 可視化する</a></div>
+          <div class="readme"><p>bipartite-graph(2部グラフ)</p>
+<p>■使い方<br>1)必要項目を、下記に従いセルに作成する<br>　　・1行目にタイトル文字列を記載<br>　　・2行目に、カラム名称を記載<br>　　・3行目以降に、描画したいデータを記載  </p>
+<p>2)上記作成データの範囲を選択した状態で、E2D3のLink dataボタンを押下する。  </p>
+<p>以下はサンプル  </p>
+<h3 id="-">国際航空旅客動態調査</h3>
+<h3 id="-2011-">(2011年)国内空港トランジット流動分析</h3>
+<h4 id="-">出典 国土交通省</h4>
+<h1 id="http-www-mlit-go-jp-common-001001813-pdf"><a href="http://www.mlit.go.jp/common/001001813.pdf">http://www.mlit.go.jp/common/001001813.pdf</a></h1>
+<table>
+<thead>
+<tr>
+<th>直前地</th>
+<th>直後地</th>
+<th>人数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01_北米西海岸</td>
+<td>01_北米西海岸</td>
+<td>2864</td>
+</tr>
+<tr>
+<td>02_北米東海岸</td>
+<td>01_北米西海岸</td>
+<td>0</td>
+</tr>
+<tr>
+<td>03_ハワイ</td>
+<td>01_北米西海岸</td>
+<td>0</td>
+</tr>
+<tr>
+<td>04_グアム・サイパン</td>
+<td>01_北米西海岸</td>
+<td>16812</td>
+</tr>
+<tr>
+<td>05_香港・マカオ</td>
+<td>01_北米西海岸</td>
+<td>24109</td>
+</tr>
+<tr>
+<td>06_台湾</td>
+<td>01_北米西海岸</td>
+<td>85638</td>
+</tr>
+<tr>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+</tbody>
+</table>
+<!--v-html--></div>
+        </figcaption>
+      </figure><!--v-component-->
+        </div><div class="col-xs-4">
+          <figure>
+        <div class="outer">
+          <div class="inner cover" style="background-image: url(&quot;/files/github/e2d3/e2d3-contrib/contents/bipartite-graph-original/thumbnail.png&quot;);">
+            <div class="title">e2d3/e2d3-contrib/bipartite-graph-original</div>
+          </div>
+        </div>
+        <figcaption>
+          <div class="action"><a class="btn btn-sm btn-visualize" href="chart.html#bipartite-graph-original!js!csv"><i class="fa fa-bar-chart"></i> 可視化する</a></div>
+          <div class="readme"><p>bipartite-graph-original(2部グラフ)</p>
+<p>■使い方<br>1)必要項目を、下記に従いセルに作成する<br>　　・1行目にタイトル文字列を記載<br>　　・2行目に、カラム名称を記載<br>　　・3行目以降に、描画したいデータを記載  </p>
+<p>2)上記作成データの範囲を選択した状態で、E2D3のLink dataボタンを押下する。  </p>
+<h3 id="-ows2-5km-">湘南OWS2.5km大会(男子/女子)比較</h3>
+<p>====  </p>
+<table>
+<thead>
+<tr>
+<th>年代階級</th>
+<th>完泳記録(HH:MM:SS)</th>
+<th>男子</th>
+<th>女子</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>02_高校生</td>
+<td>02:00:00～02:14:59</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>02_高校生</td>
+<td>02:15:00～02:29:59</td>
+<td>2</td>
+<td>0</td>
+</tr>
+<tr>
+<td>02_高校生</td>
+<td>02:30:00～02:44:59</td>
+<td>3</td>
+<td>4</td>
+</tr>
+<tr>
+<td>02_高校生</td>
+<td>02:45:00～02:59:59</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr>
+<td>02_高校生</td>
+<td>03:00:00～03:14:59</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+</tbody>
+</table>
+<!--v-html--></div>
+        </figcaption>
+      </figure><!--v-component-->
+        </div><div class="col-xs-4">
+          <figure>
+        <div class="outer">
+          <div class="inner cover" style="background-image: url(&quot;/files/github/e2d3/e2d3-contrib/contents/history-map/thumbnail.png&quot;);">
+            <div class="title">e2d3/e2d3-contrib/history-map</div>
+          </div>
+        </div>
+        <figcaption>
+          <div class="action"><a class="btn btn-sm btn-visualize" href="chart.html#history-map!js!csv"><i class="fa fa-bar-chart"></i> 可視化する</a></div>
+          <div class="readme"><h1 id="history-map-chart">History Map Chart</h1>
+<p>※写真をクリックすると拡大表示が出来ます。</p>
+<h2 id="data-format">Data Format</h2>
+<p>1行目
+| Center Latitude | Number | Center Longitude | Number | ZoomLevel | Number |
+|--------|-----------|-------------|---------|----------|-----------|</p>
+<p>2行目以降
+| Area   | Spot Name | Description | Address | Latitude | Longitude | Era    | Old Picture | Now Picture | Sub Picture | Sub Picture |
+|--------|-----------|-------------|---------|----------|-----------|--------|-------------|-------------|-------------|-------------|
+| String | String    | String      | String  | Number   | Number    | String | Picture URL | Picture URL | Picture URL | Picture URL |</p>
+<!--v-html--></div>
+        </figcaption>
+      </figure><!--v-component-->
+        </div><div class="col-xs-4">
+          <figure>
+        <div class="outer">
+          <div class="inner cover" style="background-image: url(&quot;/files/github/e2d3/e2d3-contrib/contents/compare-ipo/thumbnail.png&quot;);">
+            <div class="title">e2d3/e2d3-contrib/compare-ipo</div>
+          </div>
+        </div>
+        <figcaption>
+          <div class="action"><a class="btn btn-sm btn-visualize" href="chart.html#compare-ipo!coffee!tsv"><i class="fa fa-bar-chart"></i> 可視化する</a></div>
+          <div class="readme"><h1 id="compare-i-p-o-">Compare I.P.O.</h1>
+<p>Compare I.P.O.</p>
+<h2 id="data-format">Data Format</h2>
+<table>
+<thead>
+<tr>
+<th>date</th>
+<th>name</th>
+<th>category</th>
+<th>value0</th>
+<th>value1</th>
+<th>...</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>yyyy-mm-dd</td>
+<td>xxxx</td>
+<td>xxxxxxxx</td>
+<td>120203</td>
+<td>421042</td>
+<td>...</td>
+</tr>
+<tr>
+<td>yyyy-mm-dd</td>
+<td>xxxx</td>
+<td>xxxxxxxx</td>
+<td>120203</td>
+<td>421042</td>
+<td>...</td>
+</tr>
+<tr>
+<td>yyyy-mm-dd</td>
+<td>xxxx</td>
+<td>xxxxxxxx</td>
+<td>120203</td>
+<td>421042</td>
+<td>...</td>
+</tr>
+<tr>
+<td>...</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<!--v-html--></div>
+        </figcaption>
+      </figure><!--v-component-->
+        </div><div class="col-xs-4">
+          <figure>
+        <div class="outer">
+          <div class="inner cover" style="background-image: url(&quot;/files/github/e2d3/e2d3-contrib/contents/dot-bar-chart/thumbnail.png&quot;);">
+            <div class="title">e2d3/e2d3-contrib/dot-bar-chart</div>
+          </div>
+        </div>
+        <figcaption>
+          <div class="action"><a class="btn btn-sm btn-visualize" href="chart.html#dot-bar-chart!js!csv"><i class="fa fa-bar-chart"></i> 可視化する</a></div>
+          <div class="readme"><h1 id="dot-bar-chart">Dot Bar Chart</h1>
+<p>Bar chart which is made with dots.</p>
+<p>Each element in the header is used for the label of each bar except the leftmost one.
+The elements in the Leftmost column are period labels.
+You can move periods by arrow keys or clicking period labels below the chart.
+Note that dots are denominated if the total number of the dots exceeds 500.</p>
+<!--v-html--></div>
+        </figcaption>
+      </figure><!--v-component-->
+        </div><div class="col-xs-4">
+          <figure>
+        <div class="outer">
+          <div class="inner cover" style="background-image: url(&quot;/files/github/e2d3/e2d3-contrib/contents/dot-bar-chart-transition/thumbnail.png&quot;);">
+            <div class="title">e2d3/e2d3-contrib/dot-bar-chart-transition</div>
+          </div>
+        </div>
+        <figcaption>
+          <div class="action"><a class="btn btn-sm btn-visualize" href="chart.html#dot-bar-chart-transition!js!csv"><i class="fa fa-bar-chart"></i> 可視化する</a></div>
+          <div class="readme"><h1 id="dot-bar-chart-transition">Dot Bar Chart Transition</h1>
+<p>The motional bar chart which is made with dots.
+Each column means a period and each row, corresponds each dot, represents
+which bar the dot should belong to.
+Empty column means the dot is invisible in the period.
+You can leap between the periods with left and right arrow keys or by clicking
+period labels.</p>
+<!--v-html--></div>
+        </figcaption>
+      </figure><!--v-component-->
+        </div><div class="col-xs-4">
+          <figure>
+        <div class="outer">
+          <div class="inner cover" style="background-image: url(&quot;/files/github/e2d3/e2d3-contrib/contents/parallel-coordinates/thumbnail.png&quot;);">
+            <div class="title">e2d3/e2d3-contrib/parallel-coordinates</div>
+          </div>
+        </div>
+        <figcaption>
+          <div class="action"><a class="btn btn-sm btn-visualize" href="chart.html#parallel-coordinates!js!tsv"><i class="fa fa-bar-chart"></i> 可視化する</a></div>
+          <div class="readme"><h1 id="parallel-coordinates">Parallel coordinates</h1>
+<p>Parallel coordinates is a common way of visualizing high-dimensional geometry and analyzing multivariate data.</p>
+<!--v-html--></div>
+        </figcaption>
+      </figure><!--v-component-->
+        </div><div class="col-xs-4">
+          <figure>
+        <div class="outer">
+          <div class="inner cover" style="background-image: url(&quot;/files/github/e2d3/e2d3-contrib/contents/sequences-sumburst/thumbnail.png&quot;);">
+            <div class="title">e2d3/e2d3-contrib/sequences-sumburst</div>
+          </div>
+        </div>
+        <figcaption>
+          <div class="action"><a class="btn btn-sm btn-visualize" href="chart.html#sequences-sumburst!js!csv"><i class="fa fa-bar-chart"></i> 可視化する</a></div>
+          <div class="readme"><h1 id="sequences-sunburst">Sequences Sunburst</h1>
+<hr>
+<p>A ring chart, also known as a sunburst chart or a multilevel pie chart, is used to visualize hierarchical data, depicted by concentric circles.</p>
+<!--v-html--></div>
+        </figcaption>
+      </figure><!--v-component-->
+        </div><div class="col-xs-4">
+          <figure>
+        <div class="outer">
+          <div class="inner cover" style="background-image: url(&quot;/files/github/e2d3/e2d3-contrib/contents/nagoya-wind/thumbnail.png&quot;);">
+            <div class="title">e2d3/e2d3-contrib/nagoya-wind</div>
+          </div>
+        </div>
+        <figcaption>
+          <div class="action"><a class="btn btn-sm btn-visualize" href="chart.html#nagoya-wind!js!csv"><i class="fa fa-bar-chart"></i> 可視化する</a></div>
+          <div class="readme"><h1 id="nagoya-wind">Nagoya Wind</h1>
+<p>Arrows' length vary depending on their value.
+The field names of data are limited to be as follows.</p>
+<table>
+<thead>
+<tr>
+<th>年</th>
+<th>静穏</th>
+<th>北北東</th>
+<th>北東</th>
+<th>東北東</th>
+<th>東</th>
+<th>東南東</th>
+<th>南東</th>
+<th>南南東</th>
+<th>南</th>
+<th>南南西</th>
+<th>南西</th>
+<th>西南西</th>
+<th>西</th>
+<th>西北西</th>
+<th>北西</th>
+<th>北北西</th>
+<th>北</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1961</td>
+<td>54</td>
+<td>203</td>
+<td>123</td>
+<td>115</td>
+<td>44</td>
+<td>101</td>
+<td>164</td>
+<td>272</td>
+<td>158</td>
+<td>60</td>
+<td>38</td>
+<td>40</td>
+<td>67</td>
+<td>245</td>
+<td>411</td>
+<td>416</td>
+<td>409</td>
+</tr>
+<tr>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+</tbody>
+</table>
+<!--v-html--></div>
+        </figcaption>
+      </figure><!--v-component-->
+        </div><div class="col-xs-4">
+          <figure>
+        <div class="outer">
+          <div class="inner cover" style="background-image: url(&quot;/files/github/e2d3/e2d3-contrib/contents/scatter/thumbnail.png&quot;);">
+            <div class="title">e2d3/e2d3-contrib/scatter</div>
+          </div>
+        </div>
+        <figcaption>
+          <div class="action"><a class="btn btn-sm btn-visualize" href="chart.html#scatter!js!csv"><i class="fa fa-bar-chart"></i> 可視化する</a></div>
+          <div class="readme"><h1 id="scatter">Scatter</h1>
+<p>Scatter </p>
+<h2 id="data-format">Data Format</h2>
+<table>
+<thead>
+<tr>
+<th>Data Label1</th>
+<th>Series1 Name</th>
+<th>Series2 Name</th>
+<th>Series3 Name</th>
+<th>X location of Legend Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Data Label2</td>
+<td>Series1 color</td>
+<td>Series2 color</td>
+<td>Series3 color</td>
+<td>Y location of Legend Name</td>
+</tr>
+<tr>
+<td>Data X</td>
+<td>Series1 Data</td>
+<td>Series2 Data</td>
+<td>Series3 Data</td>
+</tr>
+</tbody>
+</table>
+<p>You can deal with any number of Series. Above example has three Series number.</p>
+<!--v-html--></div>
+        </figcaption>
+      </figure><!--v-component-->
+        </div><div class="col-xs-4">
+          <figure>
+        <div class="outer">
+          <div class="inner cover" style="background-image: url(&quot;/files/github/e2d3/e2d3-contrib/contents/foot-race/thumbnail.png&quot;);">
+            <div class="title">e2d3/e2d3-contrib/foot-race</div>
+          </div>
+        </div>
+        <figcaption>
+          <div class="action"><a class="btn btn-sm btn-visualize" href="chart.html#foot-race!js!csv"><i class="fa fa-bar-chart"></i> 可視化する</a></div>
+          <div class="readme"><h1 id="-">川上くんの徒競走</h1>
+<p>きみはボルトより速く走れるか！</p>
+<!--v-html--></div>
+        </figcaption>
+      </figure><!--v-component-->
+        </div><div class="col-xs-4">
+          <figure>
+        <div class="outer">
+          <div class="inner cover" style="background-image: url(&quot;/files/github/e2d3/e2d3-contrib/contents/pictured-treemap/thumbnail.png&quot;);">
+            <div class="title">e2d3/e2d3-contrib/pictured-treemap</div>
+          </div>
+        </div>
+        <figcaption>
+          <div class="action"><a class="btn btn-sm btn-visualize" href="chart.html#pictured-treemap!js!csv"><i class="fa fa-bar-chart"></i> 可視化する</a></div>
+          <div class="readme"><h1 id="pictured-treemap">Pictured Treemap</h1>
+<p>画像を利用できるツリーマップです。背景画像を利用したい場合は、最終列のラベルヘッダーに「image」というセルを用いてください。画像はURLを指定できます。
+※このグラフはSVG、PNGで保存はできません。</p>
+<p>This is treemap graph widh background image. Image is set in background If is "image" column exist at last of header low and url for image source in last col of rows.
+*This graph is not available to save as Image(SVG,PNG).</p>
+<h2 id="data-format">Data Format</h2>
+<table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Label1</th>
+<th>Label2</th>
+<th>...</th>
+<th>image(option)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name</td>
+<td>Data</td>
+<td>Data</td>
+<td>...</td>
+<td>Url(image source)(option)</td>
+</tr>
+</tbody>
+</table>
+<p>====
+サンプルデータは2015年埼玉県知事選挙に関連するツイッターデータです。
+Sample data is most tweeted word in during election for governor of Saitama.</p>
+<!--v-html--></div>
+        </figcaption>
+      </figure><!--v-component-->
+        </div><div class="col-xs-4">
+          <figure>
+        <div class="outer">
+          <div class="inner cover" style="background-image: url(&quot;/files/github/e2d3/e2d3-contrib/contents/food-analyzer/thumbnail.png&quot;);">
+            <div class="title">e2d3/e2d3-contrib/food-analyzer</div>
+          </div>
+        </div>
+        <figcaption>
+          <div class="action"><a class="btn btn-sm btn-visualize" href="chart.html#food-analyzer!js!csv"><i class="fa fa-bar-chart"></i> 可視化する</a></div>
+          <div class="readme"><h1 id="food-analyzer">Food Analyzer</h1>
+<p>In information visualization and computing, treemapping is a method for displaying hierarchical data by using nested rectangles.</p>
+<!--v-html--></div>
+        </figcaption>
+      </figure><!--v-component-->
+        </div><div class="col-xs-4">
+          <figure>
+        <div class="outer">
+          <div class="inner cover" style="background-image: url(&quot;/files/github/e2d3/e2d3-contrib/contents/radial-reingold-tilford-tree/thumbnail.png&quot;);">
+            <div class="title">e2d3/e2d3-contrib/radial-reingold-tilford-tree</div>
+          </div>
+        </div>
+        <figcaption>
+          <div class="action"><a class="btn btn-sm btn-visualize" href="chart.html#radial-reingold-tilford-tree!js!csv"><i class="fa fa-bar-chart"></i> 可視化する</a></div>
+          <div class="readme"><h1 id="radial-reingold-tilford-tree">Radial Reingold–Tilford Tree</h1>
+<p><a href="http://bl.ocks.org/mbostock/4063550">http://bl.ocks.org/mbostock/4063550</a></p>
+<!--v-html--></div>
+        </figcaption>
+      </figure><!--v-component-->
+        </div><div class="col-xs-4">
+          <figure>
+        <div class="outer">
+          <div class="inner cover" style="background-image: url(&quot;/files/github/e2d3/e2d3-contrib/contents/bubble-chart/thumbnail.png&quot;);">
+            <div class="title">e2d3/e2d3-contrib/bubble-chart</div>
+          </div>
+        </div>
+        <figcaption>
+          <div class="action"><a class="btn btn-sm btn-visualize" href="chart.html#bubble-chart!js!csv"><i class="fa fa-bar-chart"></i> 可視化する</a></div>
+          <div class="readme"><h1 id="bubble-chart">Bubble Chart</h1>
+<p><a href="http://bost.ocks.org/mike/nations/">http://bost.ocks.org/mike/nations/</a></p>
+<!--v-html--></div>
+        </figcaption>
+      </figure><!--v-component-->
+        </div><div class="col-xs-4">
+          <figure>
+        <div class="outer">
+          <div class="inner cover" style="background-image: url(&quot;/files/github/e2d3/e2d3-contrib/contents/force-graph/thumbnail.png&quot;);">
+            <div class="title">e2d3/e2d3-contrib/force-graph</div>
+          </div>
+        </div>
+        <figcaption>
+          <div class="action"><a class="btn btn-sm btn-visualize" href="chart.html#force-graph!js!csv"><i class="fa fa-bar-chart"></i> 可視化する</a></div>
+          <div class="readme"><h1 id="force-graph">Force Graph</h1>
+<p>Force Graph</p>
+<h2 id="data-format-sample">Data Format Sample</h2>
+<table>
+<thead>
+<tr>
+<th>'node' or 'link'</th>
+<th>id(node) or source(link)</th>
+<th>label(node) or target(link)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>node</td>
+<td>0</td>
+<td>鈴木</td>
+</tr>
+<tr>
+<td>node</td>
+<td>1</td>
+<td>田中</td>
+</tr>
+<tr>
+<td>node</td>
+<td>2</td>
+<td>佐藤</td>
+</tr>
+<tr>
+<td>link</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td>link</td>
+<td>0</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+<h2 id="author">Author</h2>
+<p>Tetsuya SATO(tetsuyas1@gmail.com)</p>
+<!--v-html--></div>
+        </figcaption>
+      </figure><!--v-component-->
+        </div><div class="col-xs-4">
+          <figure>
+        <div class="outer">
+          <div class="inner cover" style="background-image: url(&quot;/files/github/e2d3/e2d3-contrib/contents/japan-color/thumbnail.png&quot;);">
+            <div class="title">e2d3/e2d3-contrib/japan-color</div>
+          </div>
+        </div>
+        <figcaption>
+          <div class="action"><a class="btn btn-sm btn-visualize" href="chart.html#japan-color!js!csv"><i class="fa fa-bar-chart"></i> 可視化する</a></div>
+          <div class="readme"><h1 id="japan-color">Japan Color</h1>
+<p>Paint any data to japanese prefecture.</p>
+<!--v-html--></div>
+        </figcaption>
+      </figure><!--v-component-->
+        </div><div class="col-xs-4">
+          <figure>
+        <div class="outer">
+          <div class="inner cover" style="background-image: url(&quot;/files/github/e2d3/e2d3-contrib/contents/under-the-sea/thumbnail.png&quot;);">
+            <div class="title">e2d3/e2d3-contrib/under-the-sea</div>
+          </div>
+        </div>
+        <figcaption>
+          <div class="action"><a class="btn btn-sm btn-visualize" href="chart.html#under-the-sea!js!csv"><i class="fa fa-bar-chart"></i> 可視化する</a></div>
+          <div class="readme"><h1 id="under-the-sea">under the sea</h1>
+<p>swimming in the sea</p>
+<!--v-html--></div>
+        </figcaption>
+      </figure><!--v-component-->
+        </div><div class="col-xs-4">
+          <figure>
+        <div class="outer">
+          <div class="inner cover" style="background-image: url(&quot;/files/github/e2d3/e2d3-contrib/contents/leaflet-voronoi/thumbnail.png&quot;);">
+            <div class="title">e2d3/e2d3-contrib/leaflet-voronoi</div>
+          </div>
+        </div>
+        <figcaption>
+          <div class="action"><a class="btn btn-sm btn-visualize" href="chart.html#leaflet-voronoi!js!csv"><i class="fa fa-bar-chart"></i> 可視化する</a></div>
+          <div class="readme"><h1 id="leaflet-voronoi">Leaflet-voronoi</h1>
+<p>This chart draws Voronoi diagram of the points.
+Data must contains fields named "longitude" and "latitude."</p>
+<p>This program uses Leaflet.js.</p>
+<!--v-html--></div>
+        </figcaption>
+      </figure><!--v-component-->
+        </div><div class="col-xs-4">
+          <figure>
+        <div class="outer">
+          <div class="inner cover" style="background-image: url(&quot;/files/github/e2d3/e2d3-contrib/contents/jthree-example/thumbnail.png&quot;);">
+            <div class="title">e2d3/e2d3-contrib/jthree-example</div>
+          </div>
+        </div>
+        <figcaption>
+          <div class="action"><a class="btn btn-sm btn-visualize" href="chart.html#jthree-example!js!csv"><i class="fa fa-bar-chart"></i> 可視化する</a></div>
+          <div class="readme"><h1 id="jthree-js-example">jThree.js Example</h1>
+<p>jThree.jsを使用したサンプルプログラムです。
+セルの値を変更すると赤い玉の位置が変わります。
+ついでに無駄に初音ミクが走ります。</p>
+<h2 id="-">開発者向け</h2>
+<p>jThree.jsを動かすためには、main.js頭のコメントが必要です。</p>
+<p>RequireJSの設定でAMD形式に対応していないjThreeの読み込みができるようにしています。</p>
+<p><a href="http://requirejs.org/docs/api.html#config-shim">RequireJSの該当APIドキュメント</a></p>
+<!--v-html--></div>
+        </figcaption>
+      </figure><!--v-component-->
+        </div><div class="col-xs-4">
+          <figure>
+        <div class="outer">
+          <div class="inner cover" style="background-image: url(&quot;/files/github/e2d3/e2d3-contrib/contents/multi-series-radar-chart/thumbnail.png&quot;);">
+            <div class="title">e2d3/e2d3-contrib/multi-series-radar-chart</div>
+          </div>
+        </div>
+        <figcaption>
+          <div class="action"><a class="btn btn-sm btn-visualize" href="chart.html#multi-series-radar-chart!js!csv"><i class="fa fa-bar-chart"></i> 可視化する</a></div>
+          <div class="readme"><h1 id="multi-series-rader-chart">Multi Series Rader Chart</h1>
+<p>Multi Series Rader Chart</p>
+<p>Data is presented by gooスマホ部</p>
+<ul>
+<li>Win10 ＆ Excel2016で環境では動作未確認でですので"Excel Online"でご利用ください</li>
+</ul>
+<h2 id="data-format">Data Format</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+<th style="text-align:center"></th>
+<th style="text-align:center">category1</th>
+<th style="text-align:center"></th>
+<th style="text-align:center"></th>
+<th style="text-align:center">category2</th>
+<th style="text-align:center"></th>
+<th style="text-align:center"></th>
+<th style="text-align:center">category3</th>
+<th style="text-align:center"></th>
+<th style="text-align:center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">Metric1</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">Metrics2</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">Metrics3</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">Label1</td>
+<td style="text-align:center">Label2</td>
+<td style="text-align:center">...</td>
+<td style="text-align:center">...</td>
+<td style="text-align:center">...</td>
+<td style="text-align:center">...</td>
+<td style="text-align:center">...</td>
+<td style="text-align:center">...</td>
+<td style="text-align:center">...</td>
+<td style="text-align:center">...</td>
+<td style="text-align:center">...</td>
+</tr>
+</tbody>
+</table>
+<!--v-html--></div>
+        </figcaption>
+      </figure><!--v-component-->
+        </div><div class="col-xs-4">
+          <figure>
+        <div class="outer">
+          <div class="inner cover" style="background-image: url(&quot;/files/github/e2d3/e2d3-contrib/contents/wordcloud/thumbnail.png&quot;);">
+            <div class="title">e2d3/e2d3-contrib/wordcloud</div>
+          </div>
+        </div>
+        <figcaption>
+          <div class="action"><a class="btn btn-sm btn-visualize" href="chart.html#wordcloud!js!csv"><i class="fa fa-bar-chart"></i> 可視化する</a></div>
+          <div class="readme"><h1 id="word-cloud">Word cloud</h1>
+<p>This chart visualizes word cloud of the data.</p>
+<p>The square root of "value" determines the size of the "name."</p>
+<p>The layouter we use in this chart is witten by jasondavies (<a href="https://github.com/jasondavies/d3-cloud">https://github.com/jasondavies/d3-cloud</a>).</p>
+<p>The sample data is the "islands" data set in R.</p>
+<h2 id="data-format">Data Format</h2>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>string</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>...</td>
+<td>...</td>
+</tr>
+</tbody>
+</table>
+<!--v-html--></div>
+        </figcaption>
+      </figure><!--v-component-->
+        </div><div class="col-xs-4">
+          <figure>
+        <div class="outer">
+          <div class="inner cover" style="background-image: url(&quot;/files/github/e2d3/e2d3-contrib/contents/barchart-javascript/thumbnail.png&quot;);">
+            <div class="title">e2d3/e2d3-contrib/barchart-javascript</div>
+          </div>
+        </div>
+        <figcaption>
+          <div class="action"><a class="btn btn-sm btn-visualize" href="chart.html#barchart-javascript!js!csv"><i class="fa fa-bar-chart"></i> 可視化する</a></div>
+          <div class="readme"><h1 id="simple-bar-chart">Simple Bar Chart</h1>
+<p>Simple Bar Chart</p>
+<h2 id="data-format">Data Format</h2>
+<table>
+<thead>
+<tr>
+<th>Data Label1</th>
+<th>Data Label2</th>
+<th>...</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Data</td>
+<td>Data</td>
+<td>...</td>
+</tr>
+</tbody>
+</table>
+<!--v-html--></div>
+        </figcaption>
+      </figure><!--v-component-->
+        </div><div class="col-xs-4">
+          <figure>
+        <div class="outer">
+          <div class="inner cover" style="background-image: url(&quot;/files/github/e2d3/e2d3-contrib/contents/animal-olympic-2/thumbnail.png&quot;);">
+            <div class="title">e2d3/e2d3-contrib/animal-olympic-2</div>
+          </div>
+        </div>
+        <figcaption>
+          <div class="action"><a class="btn btn-sm btn-visualize" href="chart.html#animal-olympic-2!js!csv"><i class="fa fa-bar-chart"></i> 可視化する</a></div>
+          <div class="readme"><h1 id="-">みんなで徒競走</h1>
+<h2 id="-">概要</h2>
+<p>100m の記録を書き込むことで、ボルトや動物、乗り物などと競争できるグラフです。<br>画面下部にある「START」というテキストをクリックするとアイコンが動きます。  </p>
+<h2 id="-">注意事項</h2>
+<p>グラフの仕様上、以下のことができませんのでご了承くだだい。</p>
+<ul>
+<li>行追加してもグラフには反映されない</li>
+<li>行削除してデータエリアを再定義するとエラーとなる</li>
+<li>アニメーション表示グラフなので、画像出力は不完全である</li>
+</ul>
+<h2 id="-">デフォルトの記録</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">名前</th>
+<th style="text-align:left">記録</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">あなた</td>
+<td style="text-align:left">16</td>
+</tr>
+<tr>
+<td style="text-align:left">子供</td>
+<td style="text-align:left">17</td>
+</tr>
+<tr>
+<td style="text-align:left">ボルト</td>
+<td style="text-align:left">9.58</td>
+</tr>
+<tr>
+<td style="text-align:left">チータ</td>
+<td style="text-align:left">3</td>
+</tr>
+<tr>
+<td style="text-align:left">台風</td>
+<td style="text-align:left">4</td>
+</tr>
+<tr>
+<td style="text-align:left">車</td>
+<td style="text-align:left">7.2</td>
+</tr>
+<tr>
+<td style="text-align:left">馬</td>
+<td style="text-align:left">7.5</td>
+</tr>
+</tbody>
+</table>
+<h2 id="-">派生元</h2>
+<p><a href="https://github.com/e2d3/e2d3-contrib/tree/master/animal-olympic">動物オリンピック</a></p>
+<!--v-html--></div>
+        </figcaption>
+      </figure><!--v-component-->
+        </div><!--v-for-end-->
       </div>
     </div>
     <script src="https://www.promisejs.org/polyfills/promise-6.0.1.min.js"></script>
@@ -55,5 +882,5 @@
           document.querySelector('html').className += 'delegate'
       });
     </script>
-  <script src="/livereload.js?snipver=1" async="" defer=""></script></body>
-</html>
+  <script src="/livereload.js?snipver=1" async="" defer=""></script>
+</body></html>
