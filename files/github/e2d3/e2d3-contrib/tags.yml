@@ -1,0 +1,116 @@
+recommended:
+  - under-the-sea-oki 
+  - bipartite-graph-simple
+  - bipartite-graph-original
+  - history-map
+  - compare-ipo
+  - dot-bar-chart
+  - dot-bar-chart-transition
+  - parallel-coordinates
+  - sequences-sumburst
+  - nagoya-wind
+  - scatter
+  - foot-race
+  - pictured-treemap
+  - food-analyzer
+  - radial-reingold-tilford-tree
+  - bubble-chart
+  - force-graph
+  - japan-color
+  - under-the-sea
+  - leaflet-voronoi
+  - jthree-example
+  - multi-series-radar-chart
+  - wordcloud
+  - barchart-javascript
+  - animal-olympic-2
+  - wordcloud_add_font
+statistics:
+  - scatterplot-matrix-brushing
+  - principal-component-analysis
+  - principal-component-analysis-text
+  - dcjs-example
+  - simple-histogram
+  - c3js-charts
+  - c3js-line-chart
+  - slope-graph
+map:
+  - us-map
+  - japan-color
+  - japan-map
+  - japanmap-javascript
+  - hiroshima-color
+  - jp013-tokyo
+  - tokyomap-koganei
+  - saga-color
+  - yamaguchi-map
+  - population-map-iran
+  - ehime-color
+  - mie-color
+  - ise-color
+  - opendata-viewer
+globe:
+  - see-through-globe
+  - leaflet-timeline
+  - leaflet-timeline-with-value
+  - colored-leaflet-timeline
+marathon:
+  - virtual-tokyomarathon
+  - virtual-koganeinewyear-roadrace
+  - virtual-frostbite-halfmarathon
+  - virtual-katsuta-marathon
+  - virtual-toyamamarathon1
+  - virtual-toyamamarathon2
+  - virtual-tsukubamarathon
+hackathon:
+  - animal-olympic
+  - InfiniteElementMethod_E2D3-LIG_03
+  - curry
+  - jizou-javascript
+  - piechart2-javascript
+  - plain-barchart-javascript
+  - suimin-checker
+  - goal-tree
+  - text-chart
+  - tennis-serve
+  - table-tennis
+  - virtual-evacuation-marathon
+nagoya-hack:
+  - nagoya-color
+  - aichi-color
+  - anjo-color
+  - nishimikawa-color
+  - car-dot-bar-chart
+kurashiki-hack:
+  - kurashiki-landmark-chart
+  - takahashigawa-gesui
+  - kurashiki-jinkou-chart
+  - kurashiki-landmark-chart
+  - okayama-foreigner-chart
+  - kurashiki-causeofdeath-chart
+  - kurashiki-jinkou-chart
+  - kurashiki-sound-map
+  - kurashiki_wordcloud
+  - okayama-color
+  - takahashigawa-color
+  - okayama-color-farmland
+  - okayama-marriage-divorce-2014
+  - car-dot-bar-chart
+kanazawa-hack:
+  - ishikawa_map
+  - ishikawa-biparite-graph
+tbd:
+  - wanamin
+  - topic-model
+  - chained-transitions
+  - les-miserables
+  - the-euro-debt-crisis
+  - treemap
+  - simple-barchart
+  - barchart-javascript
+  - bubblechart
+  - piechart-javascript
+  - react-javascript
+  - multi-series-line-chart
+  - foot-race 2
+  - ev-driving

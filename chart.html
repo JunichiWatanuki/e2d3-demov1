@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>E2D3</title>
+    <link rel="stylesheet" href="lib/main.css">
+    <style>
+      body {
+        overflow: hidden;
+        -ms-overflow-style: none;
+      }
+    </style>
+    <script>
+      // HACKED: prevent LiveReload shutdowning parent's LiveReload
+      document.addEventListener('LiveReloadConnect', function () {
+        LiveReload.__proto__.shutDown = function () { /* noop */ };
+      });
+      
+    </script>
+  </head>
+  <body class="false">
+    <script id="themes" type="x-template">
+      <table>
+        <tr v-for="theme in themes">
+          <td><a @click="select(theme)" tabindex="-1" href="javascript:">
+              <theme-label :name="theme.name" :colors="theme.colors"></theme-label></a></td>
+        </tr>
+      </table>
+    </script>
+    <header>
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <div class="navbar-brand"><img src="logo.png" width="32" height="20"></div>
+          </div>
+          <div id="navbar">
+            <ul v-cloak class="nav navbar-nav">
+              <li><a href="javascript:" @click="rebindSelectedCells" data-toggle="tooltip" data-placement="bottom" title="Click when you change selected area"><i class="fa fa-table"></i> {{$t('linkData')}}</a></li>
+              <li v-if="!bound" v-cloak><a href="javascript:" @click="fillWithSampleData" data-toggle="tooltip" data-placement="bottom" title="Select empty cell and then click"><i class="fa fa-refresh"></i> {{$t('retryFilling')}}</a></li>
+            </ul>
+            <ul v-cloak class="nav navbar-nav navbar-right">
+              <li v-if="capabilities.selectColorThemes" v-cloak class="dropdown"><a href="javascript:" data-toggle="dropdown" class="dropdown-toggle">
+                  <theme-label :name="$t(&quot;selectColorTheme&quot;)" :colors="selectedColors"></theme-label>&nbsp;<span class="caret"></span></a>
+                <div class="dropdown-menu">
+                  <table class="theme-list">
+                    <tr>
+                      <td>
+                        <themes :themes="themes | filterBy &quot;continuous&quot; in &quot;type&quot;"></themes>
+                      </td>
+                      <td>
+                        <themes :themes="themes | filterBy &quot;highlow&quot; in &quot;type&quot;"></themes>
+                      </td>
+                      <td>
+                        <themes :themes="themes | filterBy &quot;discrete&quot; in &quot;type&quot;"></themes>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </li>
+              <li><a href="javascript:" @click="shareChart"><i class="fa fa-share-square-o"></i> {{$t('shareChart')}}</a></li>
+              <li v-if="capabilities.saveImages" v-cloak class="dropdown"><a href="javascript:" data-toggle="dropdown" class="dropdown-toggle"><i class="fa fa-file-image-o"></i> {{$t('saveImage')}}&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a @click="saveImage(&quot;svg&quot;)" tabindex="-1" href="javascript:" download="image.svg">{{$t('saveAsSvg')}}</a></li>
+                  <li><a @click="saveImage(&quot;png&quot;)" tabindex="-1" href="javascript:" download="image.png">{{$t('saveAsPng')}}</a></li>
+                </ul>
+              </li>
+              <li><a href="javascript:" @click="goHome"><i class="fa fa-home"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="maincontent container-fluid">
+      <section id="e2d3-frame" v-el:frame></section>
+      <alert-dialog v-ref:alert></alert-dialog>
+      <share-dialog v-ref:share></share-dialog>
+    </div>
+    <script src="https://www.promisejs.org/polyfills/promise-6.0.1.min.js"></script>
+    <script src="https://www.promisejs.org/polyfills/promise-done-6.0.1.min.js"></script>
+    <script src="https://appsforoffice.microsoft.com/lib/1.1/hosted/office.js"></script>
+    <script src="lib/e2d3full.js" data-main="chart.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function(event) {
+        if (sessionStorage.getItem('delegate'))
+          document.querySelector('html').className += 'delegate'
+      });
+    </script>
+  </body>
+</html>

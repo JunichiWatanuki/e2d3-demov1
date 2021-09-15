@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>E2D3</title>
+    <link rel="stylesheet" href="lib/main.css">
+  </head>
+  <body class="index">
+    <script id="chart" type="x-template">
+      <figure>
+        <div class="outer">
+          <div :style="coverBackground" class="inner cover">
+            <div class="title">{{chart.title}}</div>
+          </div>
+        </div>
+        <figcaption>
+          <div class="action"><a :href="link" class="btn btn-sm btn-visualize"><i class="fa fa-bar-chart"></i> {{$t('visualize')}}</a></div>
+          <div class="readme">{{{readme}}}</div>
+        </figcaption>
+      </figure>
+    </script>
+    <header>
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <div class="navbar-brand"><img src="logo.png" width="32" height="20"></div>
+          </div>
+          <div id="navbar">
+            <ul class="nav navbar-nav navbar-right">
+              <li id="delegate" style="display: none"><a href="#"> <i class="fa fa-bug"></i> Go into delegate mode</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="maincontent container-fluid">
+      <div class="sidebar">
+        <div v-for="tag in tags" v-cloak><a href="javascript:" :class="{ active: tag.id == selected }" @click="select(tag.id)" class="sidebar-item"><i class="fa fa-fw fa-{{tag.image}}"></i>
+            <div class="sidebar-label">{{tag.label}}</div></a></div>
+      </div>
+      <div v-cloak class="contrib row grid">
+        <div v-for="chart in selectedCharts" class="col-xs-4">
+          <chart :chart="chart"></chart>
+        </div>
+      </div>
+    </div>
+    <script src="https://www.promisejs.org/polyfills/promise-6.0.1.min.js"></script>
+    <script src="https://www.promisejs.org/polyfills/promise-done-6.0.1.min.js"></script>
+    <script src="https://appsforoffice.microsoft.com/lib/1.1/hosted/office.js"></script>
+    <script src="lib/e2d3full.js" data-main="index.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function(event) {
+        if (sessionStorage.getItem('delegate'))
+          document.querySelector('html').className += 'delegate'
+      });
+    </script>
+  </body>
+</html>
