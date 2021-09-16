@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html><head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <title>E2D3</title>
@@ -18,7 +17,7 @@
       });
       
     </script>
-  </head>
+  <script type="text/javascript" id="O15Mapping" crossorigin="anonymous" src="https://appsforoffice.microsoft.com/lib/1.1/hosted/o15apptofilemappingtable.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="chart" src="./chart.js"></script><iframe style="display:none" src="https://telemetryservice.firstpartyapps.oaspapps.com/telemetryservice/telemetryproxy.html"></iframe></head>
   <body class="false">
     <script id="themes" type="x-template">
       <table>
@@ -35,47 +34,29 @@
             <div class="navbar-brand"><img src="logo.png" width="32" height="20"></div>
           </div>
           <div id="navbar">
-            <ul v-cloak class="nav navbar-nav">
-              <li><a href="javascript:" @click="rebindSelectedCells" data-toggle="tooltip" data-placement="bottom" title="Click when you change selected area"><i class="fa fa-table"></i> {{$t('linkData')}}</a></li>
-              <li v-if="!bound" v-cloak><a href="javascript:" @click="fillWithSampleData" data-toggle="tooltip" data-placement="bottom" title="Select empty cell and then click"><i class="fa fa-refresh"></i> {{$t('retryFilling')}}</a></li>
+            <ul class="nav navbar-nav">
+              <li><a href="javascript:" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Click when you change selected area"><i class="fa fa-table"></i> データ範囲を再設定する</a></li>
+              
             </ul>
-            <ul v-cloak class="nav navbar-nav navbar-right">
-              <li v-if="capabilities.selectColorThemes" v-cloak class="dropdown"><a href="javascript:" data-toggle="dropdown" class="dropdown-toggle">
-                  <theme-label :name="$t(&quot;selectColorTheme&quot;)" :colors="selectedColors"></theme-label>&nbsp;<span class="caret"></span></a>
-                <div class="dropdown-menu">
-                  <table class="theme-list">
-                    <tr>
-                      <td>
-                        <themes :themes="themes | filterBy &quot;continuous&quot; in &quot;type&quot;"></themes>
-                      </td>
-                      <td>
-                        <themes :themes="themes | filterBy &quot;highlow&quot; in &quot;type&quot;"></themes>
-                      </td>
-                      <td>
-                        <themes :themes="themes | filterBy &quot;discrete&quot; in &quot;type&quot;"></themes>
-                      </td>
-                    </tr>
-                  </table>
-                </div>
-              </li>
-              <li><a href="javascript:" @click="shareChart"><i class="fa fa-share-square-o"></i> {{$t('shareChart')}}</a></li>
-              <li v-if="capabilities.saveImages" v-cloak class="dropdown"><a href="javascript:" data-toggle="dropdown" class="dropdown-toggle"><i class="fa fa-file-image-o"></i> {{$t('saveImage')}}&nbsp;<span class="caret"></span></a>
+            <ul class="nav navbar-nav navbar-right">
+              
+              <li><a href="javascript:"><i class="fa fa-share-square-o"></i> シェアする</a></li>
+              <li class="dropdown"><a href="javascript:" data-toggle="dropdown" class="dropdown-toggle"><i class="fa fa-file-image-o"></i> 画像を保存&nbsp;<span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                  <li><a @click="saveImage(&quot;svg&quot;)" tabindex="-1" href="javascript:" download="image.svg">{{$t('saveAsSvg')}}</a></li>
-                  <li><a @click="saveImage(&quot;png&quot;)" tabindex="-1" href="javascript:" download="image.png">{{$t('saveAsPng')}}</a></li>
+                  <li><a tabindex="-1" href="javascript:" download="image.svg">SVGとして保存</a></li>
+                  <li><a tabindex="-1" href="javascript:" download="image.png">PNGとして保存</a></li>
                 </ul>
               </li>
-              <li><a href="javascript:" @click="goHome"><i class="fa fa-home"></i></a></li>
+              <li><a href="javascript:"><i class="fa fa-home"></i></a></li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
     <div class="maincontent container-fluid">
-<!--      <section id="e2d3-frame" v-el:frame></section>       -->
       <section id="e2d3-frame"><iframe src="frame.html" width="100%" height="100%" frameborder="0" data-base-url="/e2d3-demov1/files/github/e2d3/e2d3-contrib/contents/under-the-sea-oki" data-script-type="js" data-data-type="csv"></iframe></section>
-      <alert-dialog v-ref:alert></alert-dialog>
-      <share-dialog v-ref:share></share-dialog>
+      <div tabindex="-1" class="modal fade"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">title</h5></div><div class="modal-body">message</div><div class="modal-footer"><button data-dismiss="modal" class="btn btn-sm btn-default">OK</button></div></div></div></div>
+      <div tabindex="-1" class="modal fade"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">Share your chart!</h5></div><div class="modal-body"><div class="form-group"><label>Share URL</label><div class="input-group"><input type="text" readonly="readonly" class="form-control"><div class="input-group-btn"><button class="btn btn-default"><i class="fa fa-copy"></i></button><button class="btn btn-default"><i class="fa fa-facebook"></i></button><button class="btn btn-default"><i class="fa fa-twitter"></i></button></div></div></div><div class="form-group"><label>For blog</label><textarea rows="3" readonly="readonly" class="form-control"></textarea></div></div><div class="modal-footer"><button data-dismiss="modal" class="btn btn-sm btn-default">Close</button></div></div></div></div>
     </div>
     <script src="https://www.promisejs.org/polyfills/promise-6.0.1.min.js"></script>
     <script src="https://www.promisejs.org/polyfills/promise-done-6.0.1.min.js"></script>
@@ -87,5 +68,5 @@
           document.querySelector('html').className += 'delegate'
       });
     </script>
-  <script src="/e2d3-demov1/livereload.js?snipver=1" async="" defer=""></script></body>
-</html>
+  <script src="/e2d3-demov1/livereload.js?snipver=1" async="" defer=""></script>
+</body></html>
